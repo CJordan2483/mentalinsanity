@@ -1,7 +1,7 @@
 /* ====================================================
    MENTAL INSANITY MASTER CSS
    Author: CJ Jordan
-   Last Updated: 1/17/2026 3:30am
+   Last Updated: 1/17/2026 3:45am
    Purpose: Global styles for MentalInsanity.com
 ==================================================== */
 
@@ -73,7 +73,8 @@ nav a.active {
 }
 
 .hero-image {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px; /* Desktop cap */
   height: auto;
   display: block;
   border: 2px solid #330000;
@@ -91,6 +92,13 @@ nav a.active {
 .hero-text p {
   font-size: 1.1rem;
   margin: 0.5rem auto;
+}
+
+/* ========== LARGE SCREEN BOOST ========== */
+@media (min-width: 1200px) {
+  .hero-image {
+    max-width: 500px; /* Slightly bigger on wide monitors */
+  }
 }
 
 /* ========== CONTENT SECTIONS ========== */
@@ -220,31 +228,13 @@ footer {
     padding: 1rem;
   }
 
-  .hero {
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
   nav ul {
     flex-direction: column;
     gap: 1rem;
   }
 
   nav a {
-    padding: 0.5rem 0; /* Easier tap targets on mobile */
-  }
-
-  .logo {
-    max-width: 80%;
-    height: auto;
+    padding: 0.5rem 0;
   }
 
   .hero-container {
@@ -255,42 +245,26 @@ footer {
   .hero-text {
     max-width: 100%;
     padding: 0 1rem;
-    word-wrap: break-word;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
   }
 
   .hero-image {
     max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-content img {
-    max-width: 80%;
-    margin: 1rem auto 0 auto;
-    display: block;
   }
 
   .content-section {
     padding: 2rem 1rem;
   }
 
-  .donate-block {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .donate-block .btn {
-    font-size: 1rem;
-  }
-
-  .quick-buttons a {
-    font-size: 0.9rem;
-    margin: 0.25rem;
+  .donate-card {
+    padding: 1.5rem;
   }
 }
 
