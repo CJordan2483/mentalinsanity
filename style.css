@@ -1,9 +1,18 @@
+/* ====================================================
+   MENTAL INSANITY MASTER CSS
+   Author: CJ Jordan
+   Last Updated: 1/17/2026 3:09am
+   Purpose: Global styles for MentalInsanity.com
+==================================================== */
+
+/* ========== GLOBAL RESET & STRUCTURE ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scrolling */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -17,6 +26,7 @@ body {
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
 }
 
+/* ========== HEADER & NAVIGATION ========== */
 header {
   background-color: #0a0a0a;
   padding: 1rem;
@@ -46,6 +56,7 @@ nav a.active {
   text-shadow: 0 0 5px #b30000, 0 0 15px #ff0000;
 }
 
+/* ========== HERO SECTION ========== */
 .hero-container {
   display: flex;
   align-items: center;
@@ -80,6 +91,7 @@ nav a.active {
   margin: 0.5rem auto;
 }
 
+/* ========== CONTENT SECTIONS ========== */
 .content-section {
   padding: 3rem 2rem;
   border-top: 1px solid #330000;
@@ -93,6 +105,7 @@ nav a.active {
   font-family: 'Cinzel', serif;
 }
 
+/* ========== FOOTER ========== */
 footer {
   background-color: #0a0a0a;
   text-align: center;
@@ -108,13 +121,7 @@ footer {
   font-style: italic;
 }
 
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-  }
-}
-
+/* ========== CONTACT LINE ========== */
 .contact-line {
   font-size: 0.9rem;
   color: #c1b49a;
@@ -131,6 +138,7 @@ footer {
   text-decoration: underline;
 }
 
+/* ========== DONATE SECTION ========== */
 .donate-section {
   text-align: center;
   padding: 4rem 2rem;
@@ -203,7 +211,7 @@ footer {
   font-style: italic;
 }
 
-/* MOBILE OPTIMIZATION */
+/* ========== MOBILE OPTIMIZATION ========== */
 @media (max-width: 768px) {
   body {
     font-size: 1rem;
@@ -244,12 +252,16 @@ footer {
 
   .hero-content img {
     max-width: 80%;
-    margin: 1rem auto 0 auto; /* Centered and spaced */
+    margin: 1rem auto 0 auto;
     display: block;
   }
 
+  .hero-container {
+    flex-direction: column;
+  }
+
   .content-section {
-    padding: 2rem 1rem; /* Prevents crammed text blocks */
+    padding: 2rem 1rem;
   }
 
   .donate-block {
@@ -266,4 +278,3 @@ footer {
     margin: 0.25rem;
   }
 }
-
