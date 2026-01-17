@@ -1,7 +1,7 @@
 /* ====================================================
    MENTAL INSANITY MASTER CSS
    Author: CJ Jordan
-   Last Updated: 1/17/2026 3:09am
+   Last Updated: 1/17/2026 3:30am
    Purpose: Global styles for MentalInsanity.com
 ==================================================== */
 
@@ -69,11 +69,13 @@ nav a.active {
 .hero-text {
   max-width: 700px;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .hero-image {
-  max-width: 450px;
+  max-width: 100%;
   height: auto;
+  display: block;
   border: 2px solid #330000;
   box-shadow: 0 0 20px #b30000;
 }
@@ -245,6 +247,23 @@ footer {
     height: auto;
   }
 
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0 1rem;
+    word-wrap: break-word;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .hero-content {
     flex-direction: column;
     align-items: center;
@@ -254,10 +273,6 @@ footer {
     max-width: 80%;
     margin: 1rem auto 0 auto;
     display: block;
-  }
-
-  .hero-container {
-    flex-direction: column;
   }
 
   .content-section {
@@ -281,10 +296,9 @@ footer {
 
 /* ================================
    DEBUG TOOLS – COMMENT TO DISABLE
-   ================================ */
-
-
+================================ */
+/*
 * {
   outline: 1px solid red;
 }
-
+*/
