@@ -103,6 +103,7 @@ footer {
   font-style: italic;
 }
 
+/* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -222,6 +223,10 @@ footer {
     gap: 1rem;
   }
 
+  nav a {
+    padding: 0.5rem 0; /* Easier tap targets on mobile */
+  }
+
   .logo {
     max-width: 80%;
     height: auto;
@@ -234,7 +239,12 @@ footer {
 
   .hero-content img {
     max-width: 80%;
-    margin-top: 1rem;
+    margin: 1rem auto 0 auto; /* Centered and spaced */
+    display: block;
+  }
+
+  .content-section {
+    padding: 2rem 1rem; /* Prevents crammed text blocks */
   }
 
   .donate-block {
@@ -251,4 +261,3 @@ footer {
     margin: 0.25rem;
   }
 }
-
