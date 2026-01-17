@@ -124,3 +124,54 @@ footer {
 .contact-line a:hover {
   text-decoration: underline;
 }
+
+.donate-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid #330000;
+}
+
+.donate-section .section-title {
+  color: #ff1a1a;
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #b30000;
+  margin-bottom: 1rem;
+}
+
+.donate-text {
+  font-size: 1.05rem;
+  color: #c1b49a;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donate-main {
+  display: inline-block;
+  color: #990000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.quick-donate a {
+  color: #661111;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.quick-donate a:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 5px #b30000;
+}
+
+.muted-text {
+  font-size: 0.85rem;
+  color: #887c6f;
+  font-style: italic;
+  margin-top: 1rem;
+}
