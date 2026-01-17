@@ -108,3 +108,19 @@ footer {
     flex-direction: column;
   }
 }
+
+.contact-line {
+  font-size: 0.9rem;
+  color: #c1b49a;
+  margin-bottom: 0.5rem;
+}
+
+.contact-line a {
+  color: #ff1a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
