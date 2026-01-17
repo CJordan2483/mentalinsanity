@@ -278,3 +278,13 @@ footer {
     margin: 0.25rem;
   }
 }
+
+/* ================================
+   DEBUG TOOLS – COMMENT TO DISABLE
+   ================================ */
+
+/*
+* {
+  outline: 1px solid red;
+}
+*/
